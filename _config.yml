@@ -1,10 +1,9 @@
-title: Hanseul Likes Pencil
-author: GitHub User
+title: Hanseul Like Pencil
+author: Han-Seul Jeong
 email: hanseul_j@korea.ac.kr
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi, I'm hanseul (sounds like pen'cil'). I am active AI Researcher who is interested in XAI, RL, and Signal processing with ML.
+
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -12,8 +11,8 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
+  name: Han-Seul Jeong
+  tagline: AI Researcher. Developer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
@@ -27,9 +26,9 @@ plainwhite:
     - post
   # generate social links in footer
   social_links:
-    twitter: samarsault
-    github:  samarsault
-    linkedIn: in/samarsault
+    twitter: None
+    github:  jsllovejsl@naver.com
+    linkedIn: None
     #rss: rss
     #dribbble: jekyll
     #flickr:   jekyll
