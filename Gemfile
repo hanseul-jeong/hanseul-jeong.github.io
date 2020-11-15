@@ -1,5 +1,4 @@
 # frozen_string_literal: true
 
-gem "kramdown-parser-gfm"
+gem "plainwhite"
 source "https://rubygems.org"
-gemspec
