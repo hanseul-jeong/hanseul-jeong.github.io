@@ -39,6 +39,11 @@ plainwhite:
     #soundcloud: jekyll
     #telegram: jekyll
     #gitlab: jekyll
+    markdown: kramdown
+    highlighter: rouge
+    lsi: false
+    excerpt_separator: "\n\n"
+    incremental: false
 
     # Mastodon instances
     # mastodon:
