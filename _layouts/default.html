@@ -6,6 +6,9 @@
   {% if page.use_math %}
   {% include mathjax_support.html %}
   {% endif %}
+  {% if page.comments %}
+  {% include disqus.html %}
+  {% endif%}
 </head>
 
 {%- if site.plainwhite.condensed_mobile contains page.layout -%}
