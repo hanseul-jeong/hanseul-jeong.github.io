@@ -6,9 +6,6 @@
   {% if page.use_math %}
   {% include mathjax_support.html %}
   {% endif %}
-  {% if page.comments %}
-  {% include disqus.html %}
-  {% endif%}
 </head>
 
 {%- if site.plainwhite.condensed_mobile contains page.layout -%}
@@ -180,5 +177,9 @@
   <script src="{{ "/assets/js/search.js" | relative_url }}"></script>
   {% endif %}
 </body>
+
+{% if page.comments %}
+  {% include disqus.html %}
+  {% endif%}
 
 </html>
