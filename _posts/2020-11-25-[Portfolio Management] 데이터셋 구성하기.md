@@ -55,14 +55,15 @@ Anaconda prompt에서 다음의 코드를 이용해서 python 3.6버전의 가�
     
 다음의 명령어로 설치해주세요. (numpy 버전에 따라 오류가 있는 것 같아서 버전 명시했습니다.)  
 - 저는 원래 IDE로 pycharm을 이용하고 pycharm에서 바로 설치하는 방식을 주로 이용하는데,  
-32bit로 설정해서 그런지 이 방식으로는 오류가 발생했습니다. prompt나 pycharm의 terminal을 이용하세요!
+32bit로 설정해서 그런지 이 방식으로는 아래 그림과 같은 오류가 발생했습니다.  
+anaconda prompt나 pycharm의 terminal을 이용하세요!  
 
 ![Image HTTPerror](/assets/img/HTTPerror.png)  
 
-위 코드의 결과물로는 확장자는 .db 파일이고 KOSPI, KOSDAQ의 전 종목 데이터를 받아올 수 있습니다.    
+위 코드의 결과물로는 확장자는 .db 파일이고 KOSPI, KOSDAQ의 전 종목의 일간 시가, 고가, 저가, 종가, 거래량 데이터를 받아올 수 있습니다.      
 저는 KOSPI만 대상으로 하였고, 20년 11월 25일 기준으로 총 1563종목의 데이터 수집을 완료하였습니다!  
 
-이후에는 수집한 데이터의 날짜 및 종목별로 데이터 preprocessing을 거칠 예정입니다.
+이후에는 수집한 데이터의 날짜 및 종목별로 데이터 pre-processing을 거칠 예정입니다.
 감사합니다. :)  
 
  
