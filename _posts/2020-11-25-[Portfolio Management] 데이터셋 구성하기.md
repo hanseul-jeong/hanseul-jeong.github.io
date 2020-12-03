@@ -1,6 +1,6 @@
 ---
 layout : post
-title : "[Portfolio management] 데이터셋 구성하기"
+title : "[Portfolio management] 1. 데이터셋 구성하기"
 date : "2020-11-25 14:53:00 +0530"
 category : Project
 comments : true
@@ -12,6 +12,10 @@ comments : true
 크게 **1)데이터셋 구성 2)기존 투자기법 구현 3)RL 기반 구현** 이렇게 3단계로 실습해볼 것이고,
 가능하다면 논문 리뷰도 추가할 예정입니다.
 
+자세한 사항은 [github page](https://github.com/hanseul-jeong/Portfolios "내 깃헙")를 참고해주세요!  
+(혹시 도움이 되셨다면 STAR! +_+)   
+
+
 좀 더 구체적으로는 대신증권 API를 이용해서 **KOSPI**시장의 데이터셋을 구축하고,
 Python 및 Pytorch를 이용한 간단한 **Multi-Layer Perceptron (MLP)** 모델을 구성하려고 합니다.
 비교대상이 될 기존의 투자기법들은 (앞으로 공부를 해야겠지만), 
@@ -19,7 +23,7 @@ Python 및 Pytorch를 이용한 간단한 **Multi-Layer Perceptron (MLP)** 모�
 **2) OLMAR 3) RMR 4) Anticor 5) WMAMR**  
 입니다.
 
-모델 및 비교대상들은 앞으로의 포스팅에서 더욱 자세히 다루도록 하겠습니다. :)
+모델 및 비교대상들은 앞으로의 포스팅에서 더욱 자세히 다루도록 하겠습니다.
 
 ## **Collect Dataset**
 
