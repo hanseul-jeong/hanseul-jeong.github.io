@@ -27,7 +27,7 @@ excel 프로그램으로 데이터를 쉽게 확인할 수 있는 csv파일과�
 데이터를 확인해보기 위해서 [DB browser for SQL](https://sqlitebrowser.org/dl/) 프로그램을 이용하였습니다.  
 위 링크에서 사용하시는 사양에 맞는 버전의 프로그램을 다운받으시면 쉽게 설치 가능합니다.    
 
-![Image DBbrowser](/assets/img/dbbrowser.png)  
+![Image DBbrowser](/assets/img/dbbrowser.PNG)  
 
 Preprocessing의 주 목적은 원하는 **회사 종류**, **날짜** 를 선택하기 위함입니다.  
 위 프로그램으로 확인한 결과, 각 회사마다 회사 코드를 테이블 명으로 하는 방식으로 DB가 구성되어있었습니다. (e.g., A005930 -> 삼성전자)
