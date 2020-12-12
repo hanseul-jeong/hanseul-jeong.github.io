@@ -29,9 +29,9 @@
   /* Sidebar */
   --sidebar-bg: radial-gradient(
     circle,
-    rgba(156, 188, 204, 1) 0%,
-    rgba(156, 188, 204, 1) 100%);
-  --nav-cursor-color: #749ACE;
+    rgba(231,192,187, 1) 0%,
+    rgba(231,192,187, 1) 100%);
+  --nav-cursor-color: #236163;
 
   /* Topbar */
   --topbar-wrapper-bg: white;
@@ -45,11 +45,11 @@
   --post-list-text-color: dimgray;
   --btn-patinator-text-color: #555555;
   --btn-paginator-hover-color: #e9ecef;
-  --btn-active-bg: #2a408e;
-  --btn-active-border-color: #007bff;
-  --btn-text-color: #f8f8f8;
+  --btn-active-bg: #DFC9AD;
+  --btn-active-border-color: #EEAEA7;
+  --btn-text-color: #4a4a4a;
   --btn-paginator-border-color: #f1f1f1;
-  --btn-paginator-shadow: #4b92d2;
+  --btn-paginator-shadow: #CCA4A0;
 
   /* Posts */
   --btn-share-hover-color: var(--link-color);
