@@ -2,7 +2,8 @@
 layout : post
 title :  "[Portfolio Management] 1.5 데이터 preprocessing"
 date :   '2020-12-10 16:46:36 +0530'
-categories : Project
+category : [Project]
+tags : [Portfolio, RL, 주식]
 use_math : true
 comments : true
 ---
