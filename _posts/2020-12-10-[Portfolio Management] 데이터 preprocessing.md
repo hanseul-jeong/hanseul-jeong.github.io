@@ -5,6 +5,7 @@ date :   '2020-12-10 16:46:36 +0530'
 category : [Project]
 tags : [Portfolio, RL, 주식]
 use_math : true
+comments: true
 ---
 
 강화학습을 이용해서 한국 KOSPI 시장의 주식들을 대상으로 포트폴리오를 구성해보는 프로젝트 입니다.
