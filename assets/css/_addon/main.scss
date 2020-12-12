@@ -46,7 +46,7 @@ html[mode=dark] {
 }
 
 html, body {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 body {
@@ -54,7 +54,7 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  font-family: 'Source Sans Pro', 'Nanum Gothic', sans-serif;
 }
 
 /*--- sidebar layout ---*/
@@ -80,7 +80,7 @@ $sidebar-display: "sidebar-display";
   .site-title {
     text-align: center;
     a {
-      font-weight: 900;
+      font-weight: 1300;
       font-size: 1.5rem;
       letter-spacing: 0.5px;
       &:hover {
