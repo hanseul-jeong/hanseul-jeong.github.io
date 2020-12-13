@@ -19,6 +19,7 @@
 
     h1 {
       font-size: 1.4rem;
+      font-weight: bolder;
       margin: 0;
       ~i { // pinned icon
         font-size: 0.86rem;
@@ -74,7 +75,7 @@
       align-items: center;
       border-radius: 50%;
       border: 1px solid var(--btn-paginator-border-color);
-      font-family: 'Lato', sans-serif;
+      font-family: 'Merriweather', 'Nanum Gothic', sans-serif;
       background-color: var(--button-bg);
       &:hover {
         background-color: var(--btn-paginator-hover-color)
