@@ -82,9 +82,10 @@ $sidebar-display: "sidebar-display";
     a {
       font-weight: 900;
       font-size: 1.5rem;
+      color: #236163;
       letter-spacing: 0.5px;
       &:hover {
-        color: #fff;
+        color: #648081;
         text-decoration: none;
       }
     }
@@ -93,7 +94,7 @@ $sidebar-display: "sidebar-display";
   .site-subtitle {
     font-size: 95%;
     text-align: center;
-    color: #828282;
+    color: #828282;         // sidebar title color
     line-height: 1.2rem;
     word-spacing: 1px;
     margin: 0.5rem 1.5rem 2rem 1.5rem;
@@ -114,12 +115,12 @@ $sidebar-display: "sidebar-display";
     height: $tab-height;
     &:hover {
       .nav-link {
-        color: #f8f9facf;
+        color: #899490;          // sidebar normal content color
       }
     }
     &.active {
       .nav-link {
-        color: #fcfcfc;
+        color: #6d7673;          // sidebar activated content color
       }
     }
   }

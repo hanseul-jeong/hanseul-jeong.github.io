@@ -1,10 +1,8 @@
 ---
-layout : post
 title : "[Portfolio management] 1. 데이터셋 구성하기"
-date : "2020-11-25 14:53:00 +0530"
+date : 2020-11-25 14:53:00 +0530
 category : [Project]
 tags : [Portfolio, RL, 주식]
-comments: true
 ---
 
 ## **Introduction**

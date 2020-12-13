@@ -25,15 +25,15 @@ avatar: /assets/img/profile/selfie_with_dog.png   # support internet resources
 github:
   username: hanseul-jeong             # change to your github username
 
-#twitter:
-#  username: twitter_username            # change to your twitter username
+twitter:
+  username: twitter_username            # change to your twitter username
 
 social:
   name: Han-Seul, Jeong                  # it will shows as the copyright owner in Footer
   email: hanseul_j@korea.ac.kr             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-#    - https://twitter.com/username      # change to your twitter homepage
+    - https://twitter.com/username      # change to your twitter homepage
     - https://github.com/hanseul-jeong       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -48,7 +48,7 @@ social:
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Asia/Seoul
 
 google_analytics:
   id: ''          # Fill with your Google Analytics ID

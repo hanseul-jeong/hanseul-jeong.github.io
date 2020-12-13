@@ -71,9 +71,10 @@
   .highlight .il { color: #009999; } /* Literal.Number.Integer.Long */
 
   /* --- custom light colors --- */
-  --highlight-bg-color: #f7f7f7;
-  --highlighter-rouge-color: #4dc482;
-  --highlight-lineno-color: #12a654;
-  --highlight-lineno-border-color: #e9ecef;
+  --highlight-bg-color: #f3f3f3;        // coding background color
+  --highlighter-rouge-color: #333333;
+
+  --highlight-lineno-color: #ff8d00;       // coding number line
+  --highlight-lineno-border-color: #ff5a00; // coding number line
   --inline-code-bg: #f3f3f3;
 } // light-syntax
