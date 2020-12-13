@@ -58,22 +58,20 @@
 
   /* Posts var(--link-color)*/
   --btn-share-hover-color: #ff00ff;
-
   --card-border-color: #f1f1f1;
   --card-box-shadow: rgba(234, 234, 234, 0.7686274509803922);
-
   --label-color: #808080;
   --relate-post-date: rgba(30, 55, 70, 0.4);
-  --tag-bg: #648081;
+  --tag-bg: rgba(0, 0, 0, 0.075);
   --tag-border: #dee2e6;
   --tag-shadow: var(--btn-border-color);
   --tag-hover: rgb(222, 226, 230);
   --categories-hover-bg: var(--btn-border-color);
-  --dash-color: #648081;
+  --dash-color: silver;
 
   /* Archive */
   --timeline-color: rgba(0, 0, 0, 0.075);
-  --timeline-node-bg: #648081;
+  --timeline-node-bg: #c2c6cc;
   --timeline-year-dot-color: #ffffff;
 
   /* Footer */
