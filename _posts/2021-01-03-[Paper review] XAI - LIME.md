@@ -66,24 +66,24 @@ LIME은 두 가지 방식으로 설명하는데, 첫 번째는 입력 attribute�
 ![img LIME4](/assets/img/post/lime_4.png)
 > 논문 Figure 3 참고
 
-그림에서 하늘색과 분홍색 배경은 deep learning인 모델 $f$의 복잡한 결정경계를 표현합니다.
-굵은 빨간색의 + 샘플에 대해서 설명하려고 할 때, 국소적인 지역(Locally)에서만 설명할 수 있는 interpretable한 모델 $g$를 근사시켜서 설명하는 방식입니다.
-샘플을 중심으로 주변 데이터를 랜덤하게 생성하고, 그 샘플에 대해서 원 모델 $f$와 같은 결과를 내도록 학습시키면 샘플 주변에서는 모델의 추론 방식과 같게 학습될 것입니다.
+그림에서 하늘색과 분홍색 배경은 deep learning인 모델 \\(f\\)의 복잡한 결정경계를 표현합니다.
+굵은 빨간색의 + 샘플에 대해서 설명하려고 할 때, 국소적인 지역(Locally)에서만 설명할 수 있는 interpretable한 모델 \\(g\\)를 근사시켜서 설명하는 방식입니다.
+샘플을 중심으로 주변 데이터를 랜덤하게 생성하고, 그 샘플에 대해서 원 모델 \\(f\\)와 같은 결과를 내도록 학습시키면 샘플 주변에서는 모델의 추론 방식과 같게 학습될 것입니다.
 
 $$\xi(x)=\text{argmin}_{g \in G} L(f,g,\pi_{x}) + \Omega(g)$$
 
-추가적으로 생성하는 interpretable한 모델의 복잡도 (Complexity)를 $\Omega$로 정의하고 loss에 포함시켜서, 사용자가 이해할 수 있는 설명을 만들도록 제한을 두었습니다.
+추가적으로 생성하는 interpretable한 모델의 복잡도 (Complexity)를 \\(\Omega\\)로 정의하고 loss에 포함시켜서, 사용자가 이해할 수 있는 설명을 만들도록 제한을 두었습니다.
 > tree의 경우 tree의 깊이, linear model의 경우 non-zero weight의 수 등...
 
-또한 원래 모델과 유사하게 학습시키기 위해서 생성한 랜덤 데이터들의 가중치 $\pi_{x}$를 거리에 따라 다르게 두어 최대한 원 모델과 비슷하게 학습시킬 수 있게 하였습니다.
+또한 원래 모델과 유사하게 학습시키기 위해서 생성한 랜덤 데이터들의 가중치 \\(\pi_{x}\\)를 거리에 따라 다르게 두어 최대한 원 모델과 비슷하게 학습시킬 수 있게 하였습니다.
 
 $$L(f,g,\pi_{x}) = \sum_{z,z' \in \mathbb{Z}} \pi_{x}(z)(f(z)-g(z'))^{2}$$
 
-설명하고자 하는 샘플과 유사한 데이터들을 생성하기 위해서 원본 데이터에 각 attribute를 포함할지 제외할지를 1 또는 0으로 표현한 binary mask인 $z'={0,1}^{d'}$를 생성합니다.
-이렇게 생성한 $z'$를 기반으로 실제 데이터 차원에서 샘플을 생성한 것을 $z \in \mathcal{R}^{d}$로 표현합니다.
-즉, 원 모델과 비슷한 결과를 내도록 모델 $g$를 근사시킵니다.
+설명하고자 하는 샘플과 유사한 데이터들을 생성하기 위해서 원본 데이터에 각 attribute를 포함할지 제외할지를 1 또는 0으로 표현한 binary mask인 \\(z'={0,1}^{d'}\\)를 생성합니다.
+이렇게 생성한 \\(z'\\)를 기반으로 실제 데이터 차원에서 샘플을 생성한 것을 \\(z \in \mathcal{R}^{d}\\)로 표현합니다.
+즉, 원 모델과 비슷한 결과를 내도록 모델 \\(g\\)를 근사시킵니다.
 
-이 때 가중치는 $\pi_{x}(z)=\text{exp}(-D(x,z)^{2}/\sigma^{2}$ 이렇게 정의되고, $D$는 task에 따라 정의되는 거리함수를 의미합니다.
+이 때 가중치는 \\(\pi_{x}(z)=\text{exp}(-D(x,z)^{2}/\sigma^{2}\\) 이렇게 정의되고, \\(D\\)는 task에 따라 정의되는 거리함수를 의미합니다.
 
 
 
@@ -91,15 +91,15 @@ $$L(f,g,\pi_{x}) = \sum_{z,z' \in \mathbb{Z}} \pi_{x}(z)(f(z)-g(z'))^{2}$$
 Submodular pick은 설명에 요구되는 특성 중 4) global perspective를 표현하기 위한 방식입니다.
 입력 값 중에서 어떤 set이 결정에 중요한지를 표현해서, 특히 vision 데이터에 대해서 한 눈에 알아볼 수 있도록 설명할 수 있다는 장점이 있습니다.
 
-총$n$개의 샘플 $X=x_{1},\cdots,x_{i},\cdots,x_{n}$에 대해서 학습시킨 각각의 $g_{i}$함수들의 weight를 바탕으로 최종적인 global importance를 생성합니다.
-weight를 matrix로 표현한 것을 **explanation matrix** $W_{ij}$로 표현하는데, $i$는 각 샘플 $j$는 각 attribute를 의미합니다.
-explanation matrix를 기반으로, 각 attribute의 중요도 $I_{j}=\sqrt{\sum_{i=1}^{n} W_{ij}$ 입니다. (논문에서는 feature importance로 표현합니다.)
+총\\(n\\)개의 샘플 \\(X=x_{1},\cdots,x_{i},\cdots,x_{n}\\)에 대해서 학습시킨 각각의 \\(g_{i}\\)함수들의 weight를 바탕으로 최종적인 global importance를 생성합니다.
+weight를 matrix로 표현한 것을 **explanation matrix** \\(W_{ij}\\)로 표현하는데, \\(i\\)는 각 샘플 \\(j\\)는 각 attribute를 의미합니다.
+explanation matrix를 기반으로, 각 attribute의 중요도 \\(I_{j}=\sqrt{\sum_{i=1}^{n} W_{ij}\\) 입니다. (논문에서는 feature importance로 표현합니다.)
 
 ![img LIME5](/assets/img/post/lime_5.png)
 > 논문의 Figure 5 참고
 
-행(row)마다 다른 샘플으로 각각 2개씩의 attribute를 중요하다고 판단하였습니다. 이 때 열(column)기준으로 보면 $f2$인 점선으로 표현된 부분이 가장 빈번하게 중요하다고 판단됨을 알 수 있습니다.
-feature importance가 높은 순으로 총 $B$ 개의 attribute를 선택하여 set을 구성합니다.
+행(row)마다 다른 샘플으로 각각 2개씩의 attribute를 중요하다고 판단하였습니다. 이 때 열(column)기준으로 보면 \\(f2\\)인 점선으로 표현된 부분이 가장 빈번하게 중요하다고 판단됨을 알 수 있습니다.
+feature importance가 높은 순으로 총 \\(B\\) 개의 attribute를 선택하여 set을 구성합니다.
 
 
 ## Results

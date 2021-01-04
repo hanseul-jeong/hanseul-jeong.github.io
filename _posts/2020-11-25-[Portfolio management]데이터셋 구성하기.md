@@ -57,7 +57,8 @@ Anaconda prompt에서 다음의 코드를 이용해서 python 3.6버전의 가�
     conda install pyqt sqlite pywin32 pandas numpy=1.16.1
 
 다음의 명령어로 설치해주세요. (numpy 버전에 따라 오류가 있는 것 같아서 버전 명시했습니다.)
-- 저는 원래 IDE로 pycharm을 이용하고 pycharm에서 바로 설치하는 방식을 주로 이용하는데,
+
+> 저는 원래 IDE로 pycharm을 이용하고 pycharm에서 바로 설치하는 방식을 주로 이용하는데,
 32bit로 설정해서 그런지 이 방식으로는 아래 그림과 같은 오류가 발생했습니다.
 anaconda prompt나 pycharm의 terminal을 이용하세요!
 

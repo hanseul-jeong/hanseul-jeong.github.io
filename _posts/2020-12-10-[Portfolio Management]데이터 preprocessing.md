@@ -14,8 +14,7 @@ math : true
 자세한 사항은 [github page](https://github.com/hanseul-jeong/Portfolios "내 깃헙")를 참고해주세요!
 (혹시 도움이 되셨다면 STAR! +_+)
 
-
-> ## Pre-processing
+## Pre-processing
 
 데이터셋의 확장자는 db파일으로 sql 구문으로 쉽게 접근이 가능합니다.
 
