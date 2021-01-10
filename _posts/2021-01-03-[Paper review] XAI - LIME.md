@@ -1,5 +1,5 @@
 ---
-title : "[Paper review] XAI (1)- LIME"
+title : "[Paper review] XAI - 1.LIME"
 date : 2021-01-03 11:53:00
 math : true
 category : [Papers]
