@@ -54,11 +54,11 @@ $$J=\sum_{c}-p_{c}^{\text{label}}log(p_{c}^{\text{pred}})$$
 이를 잘 들여다보면 \\(J\\)를 줄이기 위해서는 각 클래스에 대한 label과 prediction의 정보량이 일치할 때 가장 작은 값이 나올 것이라고 생각할 수 있습니다.
  이는 결국 label의 확률분포와 pred의 확률분포가 일치하도록 만드는 것이 cross-entropy의 목적이라는 것을 알 수 있습니다.
 
-# *KL-Divergence*
+## *KL-Divergence*
 
 KL-divergence는 두 분포간의 차를 표현하기 위해 사용되는 개념입니다.
 
-$$D_{KL}(p||q)=E$[log \frac{p}{q}]$ $$
+$$D_{KL}(p||q)=E[log \frac{p}{q}] $$
 
 위의 식이 확률분포 \\(P,Q\\)간의 KL divergence의 정의이고 expectation을 풀어쓰면,
 
