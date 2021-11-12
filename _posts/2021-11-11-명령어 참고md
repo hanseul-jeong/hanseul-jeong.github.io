@@ -1,0 +1,35 @@
+---
+title : "명령어 참고"
+date : 2021-11-11 18:00:00
+math : true
+categories: [개발]
+tags: [리눅스명령어]
+---
+
+### tmux
+
+tmux         # 터미널 창 띄우기
+tmux ls      # 살아있는 터미널 창 확인
+(ctrl + b) d # 터미널 나가기 (종료 X)
+exit         # 터미널 종료
+tmux a -t 0  # 터미널 attach
+
+### docker
+
+docker ps # 동작 중인 docker 확인
+docker attach (docker image)[앞 4자리도 가능] (e.g., docker attach dec8)    # 생성된 docker 실행하기
+ctrl + p + q # docker 나가기 (종료 X)
+exit # docker 종료
+
+### etc.
+
+ls -l or ls -al # 전체 파일 상태 확인하기
+chown (user):(group) (파일이름) (e.g., chown 1348:1300 test.txt, chown root:root test.txt)
+htop
+cat /proc/cpuinfo
+cat /proc/meminfo
+watch -n0.1 nvidia-smi
+
+
+
+
